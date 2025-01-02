@@ -13,3 +13,13 @@ export const range = (start, end, step = 1) => {
   }
   return output;
 };
+
+export const validateInput = (guess) => { 
+  if (guess.length !== 5) {
+    return "Please enter a 5-letter word.";
+  }
+  if (guess.match(/[^a-zA-Z]/)) {
+    return "Please enter only letters.";
+  }
+  return null;
+}
