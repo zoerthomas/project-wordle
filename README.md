@@ -1,3 +1,12 @@
+
+
+# Demo of my version!
+
+https://github.com/user-attachments/assets/1184b2e9-0d2e-4526-881f-09b8fd6c4510
+
+Thanks to the [dictionary api] (https://dictionaryapi.dev/) for the word validation!
+
+
 # Word Game
 
 ## Joy of React, Project I
