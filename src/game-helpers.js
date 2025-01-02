@@ -53,3 +53,13 @@ export function checkGuess(guess, answer) {
 
   return result;
 }
+// TODO: better error handling for if the API is down
+export async function checkIsRealWord(guess) {
+  return fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${guess}`)
+    .then((response) => {
+      if (response.status == 404) {
+        return false;
+      }
+      return true;
+    })
+}
